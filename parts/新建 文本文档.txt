@@ -1,0 +1,163 @@
+2710   C:\mpc-hc\mpc-hc_4\src\Subtitles\RTS.cpp
+
+1333   RTS.cpp CLine* CSubtitle::GetNextLine(POSITION& pos, int maxwidth)
+void CRenderedTextSubtitle::ParseString(CSubtitle* sub, CStringW str, STSStyle& style)
+1820      
+781    C:\mpc-hc\mpc-hc_4\src\SubPic\SubPicQueueImpl.cpp
+
+            m_displayData[i].tEnd = m_displayData[i].tPrevEnd = m_subtimes[i].orgEnd;
+
+PlayerSubresyncBar.cpp 255    m_subtimes.resize(m_sts.GetCount());
+
+    POSITION pos = m_subtitleCache.GetStartPosition();
+ RTS.cpp
+m_wndSubresyncBar.SetSubtitle(subInput.pSubStream, m_pCAP->GetFPS()); 16370
+            g_bExternalSubtitle = (std::find(m_ExternalSubstreams.cbegin(), m_ExternalSubstreams.cend(), subInput.pSubStream) != m_ExternalSubstreams.cend()); 16369
+
+        m_pCurrentSubInput = subInput; 16353
+
+C:\mpc-hc\mpc-hc_4\src\Subtitles\RTS.cpp
+
+
+16272                if (subInput.pSubStream == m_pSubStreams.GetNext(pos).pSubStream) {
+
+
+
+MainFrm.cpp 19583
+	subInput.pSubStream->GetStreamCount() = 21
+	pSubInput
+	pSubStream = 0x09d27710 {Count = 21}
+
+"C:\mpc-hc\mpc-hc_4\src\Subtitles\SubtitleHelpers.cpp" 234
+CString Subtitle::GuessSubtitleName(const CString& fn, CString videoName, LCID& lcid, CString& langname, HearingImpairedType& hi)
+
+MainFrm.cpp 16041 pSubStream
+        int substm = SetupSubtitleStreams();   14244
+
+MainFrm.cpp 16189
+bool CMainFrame::SetSubtitle(int i, bool bIsOffset /*= false*/, bool bDisplayMessage /*= false*/)
+
+
+
+git clone  --recursive https://github.com/clsid2/mpc-hc.git
+
+git clone  --recursive https://github.com/mpc-hc/mpc-hc.git
+
+git clone --recursive https://github.com/clsid2/mpc-hc.git
+
+git checkout libass
+
+git checkout 1.9.20
+git switch -c 1.9.20
+
+git pull origin 1.9.20
+
+windows 通用crt sdk
+
+https://support.microsoft.com/zh-cn/topic/windows-%E4%B8%AD%E7%9A%84-universal-c-runtime-%E6%9B%B4%E6%96%B0-c0514201-7fe6-95a3-b0a5-287930f3560c
+
+git submodule update --init --recursive
+
+
+
+- C++ ATL
+    - C++ MFC
+C:\mpc-hc\mpc-hc-1.9.21\docs\Compilation.md
+
+
+https://go.microsoft.com/fwlink/p/?LinkId=323507
+
+
+
+git clone --recursive git@github.com:jeeb/mpc-hc.git
+
+
+
+
+
+
+https://github.com/jeeb/mpc-hc/blob/master/docs/Compilation.txt
+
+git clone --recursive https://github.com/mpc-hc/mpc-hc.git
+
+
+
+
+
+
+
+
+
+
+
+root@singapore-datacenter:~# ls
+0  mpc-hc  mpc-hc.zip  snap
+root@singapore-datacenter:~# rm mpc-hc* -r
+root@singapore-datacenter:~# ls
+0  snap
+root@singapore-datacenter:~# git clone https://github.com/clsid2/mpc-hc.git
+Cloning into 'mpc-hc'...
+remote: Enumerating objects: 176655, done.
+remote: Counting objects: 100% (233/233), done.
+remote: Compressing objects: 100% (155/155), done.
+remote: Total 176655 (delta 144), reused 132 (delta 78), pack-reused 176422
+Receiving objects: 100% (176655/176655), 200.36 MiB | 12.69 MiB/s, done.
+Resolving deltas: 100% (154318/154318), done.
+root@singapore-datacenter:~# ls
+0  mpc-hc  snap
+root@singapore-datacenter:~# cd mpc-hc/
+root@singapore-datacenter:~/mpc-hc# git submodule update --recursive --remote
+root@singapore-datacenter:~/mpc-hc# git submodule update --recursive --remote
+root@singapore-datacenter:~/mpc-hc# git pull
+Already up to date.
+root@singapore-datacenter:~/mpc-hc# git submodule update --init --recursive
+Submodule 'LAVFilters' (https://github.com/clsid2/LAVFilters.git) registered for path 'src/thirdparty/LAVFilters/src'
+Submodule 'soundtouch' (https://github.com/alexmarsev/soundtouch.git) registered for path 'src/thirdparty/SoundTouch/soundtouch'
+Submodule 'bs2b' (https://github.com/alexmarsev/libbs2b.git) registered for path 'src/thirdparty/bs2b/libbs2b'
+Submodule 'src/thirdparty/fontconfig/fontconfig' (https://github.com/ShiftMediaProject/fontconfig.git) registered for path 'src/thirdparty/fontconfig/fontconfig'
+Submodule 'src/thirdparty/freetype2/freetype2' (https://gitlab.freedesktop.org/freetype/freetype.git) registered for path 'src/thirdparty/freetype2/freetype2'
+Submodule 'src/thirdparty/fribidi/fribidi' (https://github.com/ShiftMediaProject/fribidi.git) registered for path 'src/thirdparty/fribidi/fribidi'
+Submodule 'src/thirdparty/harfbuzz/harfbuzz' (https://github.com/ShiftMediaProject/harfbuzz.git) registered for path 'src/thirdparty/harfbuzz/harfbuzz'
+Submodule 'lcms2' (https://github.com/mm2/Little-CMS.git) registered for path 'src/thirdparty/lcms2/library'
+Submodule 'src/thirdparty/libass/libass' (https://github.com/libass/libass.git) registered for path 'src/thirdparty/libass/libass'
+Submodule 'src/thirdparty/libiconv/libiconv-for-Windows' (https://github.com/pffang/libiconv-for-Windows.git) registered for path 'src/thirdparty/libiconv/libiconv-for-Windows'
+Submodule 'src/thirdparty/liblzma/liblzma' (https://github.com/ShiftMediaProject/liblzma.git) registered for path 'src/thirdparty/liblzma/liblzma'
+Submodule 'src/thirdparty/libxml2/libxml2' (https://github.com/ShiftMediaProject/libxml2.git) registered for path 'src/thirdparty/libxml2/libxml2'
+Submodule 'src/thirdparty/minhook/minhook' (https://github.com/TsudaKageyu/minhook.git) registered for path 'src/thirdparty/minhook/minhook'
+Submodule 'NanoSVG' (https://github.com/memononen/nanosvg.git) registered for path 'src/thirdparty/nanosvg'
+Submodule 'rapidjson' (https://github.com/tencent/rapidjson.git) registered for path 'src/thirdparty/rapidjson'
+Submodule 'soxr' (https://github.com/alexmarsev/soxr.git) registered for path 'src/thirdparty/soxr/libsoxr'
+Submodule 'tinyxml2' (https://github.com/leethomason/tinyxml2.git) registered for path 'src/thirdparty/tinyxml2/library'
+Cloning into '/root/mpc-hc/src/thirdparty/LAVFilters/src'...
+Cloning into '/root/mpc-hc/src/thirdparty/SoundTouch/soundtouch'...
+Cloning into '/root/mpc-hc/src/thirdparty/bs2b/libbs2b'...
+Cloning into '/root/mpc-hc/src/thirdparty/fontconfig/fontconfig'...
+Cloning into '/root/mpc-hc/src/thirdparty/freetype2/freetype2'...
+remote: GitLab is not responding
+fatal: unable to access 'https://gitlab.freedesktop.org/freetype/freetype.git/': The requested URL returned error: 502
+fatal: clone of 'https://gitlab.freedesktop.org/freetype/freetype.git' into submodule path '/root/mpc-hc/src/thirdparty/freetype2/freetype2' failed
+Failed to clone 'src/thirdparty/freetype2/freetype2'. Retry scheduled
+Cloning into '/root/mpc-hc/src/thirdparty/fribidi/fribidi'...
+Cloning into '/root/mpc-hc/src/thirdparty/harfbuzz/harfbuzz'...
+Cloning into '/root/mpc-hc/src/thirdparty/lcms2/library'...
+Cloning into '/root/mpc-hc/src/thirdparty/libass/libass'...
+Cloning into '/root/mpc-hc/src/thirdparty/libiconv/libiconv-for-Windows'...
+Cloning into '/root/mpc-hc/src/thirdparty/liblzma/liblzma'...
+Cloning into '/root/mpc-hc/src/thirdparty/libxml2/libxml2'...
+Cloning into '/root/mpc-hc/src/thirdparty/minhook/minhook'...
+Cloning into '/root/mpc-hc/src/thirdparty/nanosvg'...
+Cloning into '/root/mpc-hc/src/thirdparty/rapidjson'...
+Cloning into '/root/mpc-hc/src/thirdparty/soxr/libsoxr'...
+Cloning into '/root/mpc-hc/src/thirdparty/tinyxml2/library'...
+Cloning into '/root/mpc-hc/src/thirdparty/freetype2/freetype2'...
+remote: GitLab is not responding
+fatal: unable to access 'https://gitlab.freedesktop.org/freetype/freetype.git/': The requested URL returned error: 502
+fatal: clone of 'https://gitlab.freedesktop.org/freetype/freetype.git' into submodule path '/root/mpc-hc/src/thirdparty/freetype2/freetype2' failed
+Failed to clone 'src/thirdparty/freetype2/freetype2' a second time, aborting
+root@singapore-datacenter:~/mpc-hc#
+
+
+严重性	代码	说明	项目	文件	行	禁止显示状态
+错误	C1083	无法打开源文件: “liblzma\src\liblzma\check\check.c”: No such file or directory	liblzma	C:\mpc-hc\mpc-hc-1.9.21\src\thirdparty\liblzma\c1	1	
+
+
