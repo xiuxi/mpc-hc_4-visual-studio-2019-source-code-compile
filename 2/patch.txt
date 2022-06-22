@@ -1,0 +1,2 @@
+cp MainFrm.cpp "C:\mpc-hc\mpc-hc_4\src\mpc-hc\MainFrm.cpp"
+cp RTS.cpp "C:\mpc-hc\mpc-hc_4\src\Subtitles\RTS.cpp"
