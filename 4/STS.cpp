@@ -3079,7 +3079,8 @@ bool CSimpleTextSubtitle::Open(CString fn, int CharSet, CString name, CString vi
     if (name.IsEmpty()) {
         name = Subtitle::GuessSubtitleName(fn, videoName, m_lcid, m_langname, m_eHearingImpaired);
     }
-    srt_path = { fn.GetString(), fn.GetString() + fn.GetLength() };;
+    srt_path = CW2A(fn);
+    //srt_path = { fn.GetString(), fn.GetString() + fn.GetLength() };;
     return Open(&f, CharSet, name);
 }
 

@@ -1,3 +1,9 @@
+srt_path = CW2A(fn);
+
+
+srt_path = CW2A(fn);
+
+
     std::string s = { fn.GetString(), fn.GetString() + fn.GetLength() };
     
 
