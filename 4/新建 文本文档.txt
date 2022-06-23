@@ -1,0 +1,5 @@
+
+std::string srt_path = "";
+
+extern std::string srt_path
+

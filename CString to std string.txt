@@ -1,0 +1,18 @@
+    std::string s = { fn.GetString(), fn.GetString() + fn.GetLength() };
+    
+
+
+https://stackoverflow.com/questions/258050/how-do-you-convert-cstring-and-stdstring-stdwstring-to-each-other
+
+#include <string>
+#include <atlconv.h>
+
+std::string to_std_string(CStringA const& src)
+{
+    return { src.GetString(), src.GetString() + src.GetLength() };
+}
+
+std::wstring to_std_wstring(CStringW const& src)
+{
+    return { src.GetString(), src.GetString() + src.GetLength() };
+}
